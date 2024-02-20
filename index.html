@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Education- responsive page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+	<script>
+		jQuery(function($){
+			var $navbar = $('.navbar');
+			$(window).scroll(function(event){
+				var $current = $(this).scrollTop();
+				if($current > 0){
+					$navbar.addClass('white');
+				}else{
+					$navbar.removeClass('white');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav  class="navbar">
+		<ul class="nav-list">
+			<div class="logo"><img src="edu.jpg" alt="logo"></div>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="rightNav v-class">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+
+		
+
+	</nav>
+
+	<section class="background firstSection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<p class="text-big">The Future of Education</p>
+				<p class="text-small">In this world of 7 billon people we need to educate all of them. 
+				this is the future of an educated world and we are pround to say that the future of education is here</p>
+				<div class="buttons">
+					<button class="btn">Subscribe</button>
+					<button class="btn">Watch Video</button>
+			</div>
+		</div>
+			<div class="secondHalf">
+				<img src="edu.jpg" alt="laptop image">
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section">
+		<div class="paras">
+		<p class="sectiontag text-big">Personalized learning</p>
+		<p class="sectionSubtag text-small">Students will learn with study tools that adapt to the capabilities of a student. 
+		This means above average students shall be challenged with harder tasks and questions when a certain level is achieved. 
+	    Students who experience difficulties with a subject will get the opportunity to practice more until they reach the required level. 
+        Students will be positively reinforced during their individual learning processes. This can result in to positive learning experiences 
+        and will diminish the amount of students losing confidence about their academic abilities. Furthermore, 
+        teachers will be able to see clearly which students need help in which areas</p>
+	</div>
+		<div class="thumbnail">
+			<img src="IM2.png" alt="Laptop image" class="imgFluid">
+		</div>
+	</section>
+
+	<section class="section Left">
+		<div class="paras">
+		<p class="sectiontag text-big">Diverse time and place</p>
+		<p class="sectionSubtag text-small">Students will have more opportunities to learn at different times in different places. 
+		eLearning tools facilitate opportunities for remote, self-paced learning. Classrooms will be flipped, 
+	    which means the theoretical part is learned outside the classroom, whereas the practical part shall be 
+	    taught face to face, interactively.</p>
+	</div>
+		<div class="thumbnail">
+			<img src="IM1.png" alt="Laptop image" class="imgFluid">
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+		<p class="sectiontag text-big">Free choice</p>
+		<p class="sectionSubtag text-small">Though every subject that is taught aims for the same destination, 
+		the road leading towards that destination can vary per student. Similarly to the personalized learning experience, 
+	    students will be able to modify their learning process with tools they feel are necessary for them. Students will learn with different devices, 
+        different programs and techniques based on their own preference. Blended learning, flipped classrooms and 
+        BYOD (Bring Your Own Device) form important terminology within this change</p>
+	</div>
+		<div class="thumbnail">
+			<img src="IM3.png" alt="Laptop image" class="imgFluid">
+		</div>
+	</section>
+
+
+
+
+</body>
+</html>
